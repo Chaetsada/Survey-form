@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins&display=swap');
+:root{
+    --clr-white:#f3f3f3;
+    --clr-darkblue:#1b1b32;
+    --clr-darkblue-alpha:rgba(27, 27, 50, 0.8);
+    --clr-green:#37af65;
+    --fs-base:16px;
+    --ff-base: 'Poppins', sans-serif;
+    --radius:5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--fs-base);
+}
+body{
+    min-height: 100vh;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.7) 100%), url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--ff-base);
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    color: var(--clr-white);
+    padding: 2rem 0;
+        >h1{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        >p{
+            text-align: center;
+        }
+}
+input,button,select,textarea{
+    font-size: inherit;
+    font-family: inherit;
+}
+.container{
+    width: 720px;
+    margin: 0 auto;
+}
+form{
+    background-color: var(--clr-darkblue-alpha);
+    color: var(--clr-white);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius);
+}
+.form-control{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.form-control label{
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+        >span{
+            font-size: .9rem;
+        }
+}
+.form-control select{
+    width: 100%;
+    padding: .5rem .75rem;
+    border-radius: var(--radius);
+}
+.form-control p{
+    font-size: 1.1rem;
+}
+.form-control textarea{
+    width: 100%;
+    padding: .5rem;
+}
+.form-control button{
+    width: 100%;
+    padding: .5rem 0;
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+.form-control button:hover{
+    cursor: pointer;
+}
+input[type=checkbox]{
+    height: 20px;
+    width: 20px;
+    vertical-align: text-top;
+}
+input[type=radio]{
+    height: 20px;
+    width: 20px;
+    vertical-align: text-top;
+}
+/*--------------------- Name ,Email ,Age ------------------ */
+#name-label,
+#email-label,
+#number-label{
+    font-size: 1.1rem;
+}
+#name,
+#email,
+#number{
+    width: 100%;
+    padding: .5rem .75rem;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    color: var(--clr-darkblue-alpha);
+    border: none;
+    outline: none;
+}
+@media only screen and (max-width:720px){
+    .container{
+        width: 500px;
+    } 
+}
